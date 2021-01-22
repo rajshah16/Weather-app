@@ -1,4 +1,4 @@
-console.log("Client side javascript loaded in website")
+
 
 
 
