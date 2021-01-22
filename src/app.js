@@ -3,6 +3,9 @@ const path = require('path') // Node.js module so it is not downloaded
 const express = require('express') // Npm module
 const hbs = require('hbs')
 const app = express()
+const port = process.env.PORT || 3000   
+
+
 const request  = require('request')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
@@ -110,8 +113,8 @@ app.get('*' , (req , res)=>{
     })
 })
 
-app.listen(3000 , ()=>{
-    console.log("The web is running on 3000")
+app.listen(port , ()=>{
+    console.log("The web is running on "+ port)
 })
 
 
